@@ -35,6 +35,7 @@ function displayWeather(data) {
     switch (weatherCondition) {
         case 'clear':
             body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your clear weather image
+        
             break;
         case 'clouds':
             body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1612297728955-a0ad12a75df9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your cloudy weather image
@@ -52,13 +53,13 @@ function displayWeather(data) {
 
     const weatherInfo = document.createElement('div');
     weatherInfo.innerHTML = `
-        <h2>${cityName}, ${country}</h2>
-        <p>Temperature: ${temperature}°C</p>
-        <p>Weather: ${weatherDescription}</p>
+        <h1>${cityName}, ${country}</h1>
+        <h3>Temperature: ${temperature}°C</h3>
+        <h3>Weather: ${weatherDescription}</h3>
         <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon">
-        <p>Humidity: ${humidity}</p>
-        <p>windSpeed: ${windSpeed}</p>
-        <p>pressure: ${pressure}</p>
+        <h3>Humidity: ${humidity}</h3>
+        <h3>windSpeed: ${windSpeed}</h3>
+        <h3>pressure: ${pressure}</h3>
     `;
 
     weatherDataDiv.appendChild(weatherInfo);
