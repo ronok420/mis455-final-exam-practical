@@ -57,13 +57,13 @@ function displayWeather(data) {
 
     const weatherInfo = document.createElement('div');
     weatherInfo.innerHTML = `
-        <h1>${cityName}, ${country}</h1>
-        <h3>Temperature: ${temperature}°C</h3>
-        <h3>Weather: ${weatherDescription}</h3>
-        <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon">
-        <h3>Humidity: ${humidity}</h3>
-        <h3>windSpeed: ${windSpeed}</h3>
-        <h3>pressure: ${pressure}</h3>
+        <h1>${cityName}, <span class="text-salmon">${country}</span></h1>
+        <h3>Temperature: <span class="text-orange">${temperature}°C</span></h3>
+        <h3>Weather: <span class="text-orange">${weatherDescription}</span></h3>
+        <img  src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather icon">
+        <h3>Humidity: <span class="text-orange">${humidity}</span></h3>
+        <h3>windSpeed: <span class="text-orange">${windSpeed}</span></h3>
+        <h3>pressure:<span class="text-orange">${pressure}</span> </h3>
     `;
 
     weatherDataDiv.appendChild(weatherInfo);

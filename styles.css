@@ -34,6 +34,15 @@ button {
 button:hover {
     background: linear-gradient(to right, #ff6347, #ff8c00); /* Reverse gradient colors on hover */
 }
+.text-salmon{
+    font-size: 60px;
+    color: salmon;
+}
+.text-orange{
+    font-size: 20px;
+    color: orangered;
+}
+
 
 
 #weatherData {
