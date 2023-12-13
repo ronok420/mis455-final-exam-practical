@@ -28,7 +28,26 @@ function displayWeather(data) {
     const pressure = data.main.pressure;
 
 
-   
+    const body = document.body;
+    const weatherCondition = data.weather[0].main.toLowerCase();
+    console.log(weatherCondition);
+
+    switch (weatherCondition) {
+        case 'clear':
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your clear weather image
+            break;
+        case 'clouds':
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1612297728955-a0ad12a75df9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your cloudy weather image
+            break;
+        case 'rain':
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1610741083757-1ae88e1a17f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your rainy weather image
+            break;
+        case 'storm':
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1611928482473-7b27d24eab80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your stormy weather image
+            break;
+        default:
+            body.style.backgroundImage = 'url("default.jpg")'; // Replace with your default background image
+    }
     
 
     const weatherInfo = document.createElement('div');
