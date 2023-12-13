@@ -34,20 +34,24 @@ function displayWeather(data) {
 
     switch (weatherCondition) {
         case 'clear':
-            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your clear weather image
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; 
+        
+            break;
+        case 'mist':
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1563417079254-6025a98aef80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; 
         
             break;
         case 'clouds':
-            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1612297728955-a0ad12a75df9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your cloudy weather image
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1612297728955-a0ad12a75df9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; 
             break;
         case 'rain':
-            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1610741083757-1ae88e1a17f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your rainy weather image
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1610741083757-1ae88e1a17f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; 
             break;
         case 'storm':
-            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1611928482473-7b27d24eab80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your stormy weather image
+            body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1611928482473-7b27d24eab80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; 
             break;
         default:
-            body.style.backgroundImage = 'url("default.jpg")'; // Replace with your default background image
+            body.style.backgroundImage = 'url("default.jpg")'; 
     }
     
 
